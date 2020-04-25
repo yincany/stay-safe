@@ -1,7 +1,8 @@
 {
   "name": "Stay Home",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

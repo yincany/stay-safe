@@ -10,7 +10,7 @@ import { SeleccionarPaisPageRoutingModule } from './seleccionar-pais-routing.mod
 
 import { SeleccionarPaisPage } from './seleccionar-pais.page';
 
-@NgModule({
+@NgModule({ 
   imports: [
     CommonModule,
     FormsModule,

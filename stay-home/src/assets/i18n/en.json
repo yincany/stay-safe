@@ -11,15 +11,39 @@
         "msg": "problem"
     },
     "CHOOSE":{
-        "doctor_text": "Select as physician",
+        "doctor_text": "Enter as physician",
         "doctor": "Physician",
         "patient": "Patient",
-        "patient_text": "Select as patient"
+        "patient_text": "Enter as patient"
     },
     "MEDICOTABS":{
         "primera": "LOGs",
         "segunda": "Now",
         "tercera": "Config"
+    },
+    "PREGUNTAS":{
+        "primera": "¿Tienes sensación de falta de aire de inicio brusco (en ausencia de cualquier otra patología que justifique este síntoma)?",
+        "segunda": "¿Tienes fiebre? (+37.7ºC)",
+        "tercera": "¿Tienes tos seca y persistente?",
+        "cuarta": "¿Has tenido contacto estrecho con algún paciente positivo confirmado?",
+        "quinta": "¿Tienes mucosidad en la nariz?",
+        "sexta": "¿Tienes dolor muscular?",
+        "septima": "¿Tienes sintomatología gastrointestinal?",
+        "octava": "¿Llevas más de 20 días con estos síntomas?"
+    },
+    "BOTONES":{
+        "enviar": "Evaluate" 
+    },
+    "PACIENTEACTUAL":{
+        "title": "Dairy test",
+        "caption": "Today"
+        
+    },
+    "PACIENTERECORD":{
+        "title": "Dairy recording",
+        "recording": "Recording...",
+        "text": "<b>Tienes posibles síntomas de coronavirus</b>. Uno de los síntomas más importantes es medir la capacidad pulmonar de cada enfermo. Para no saturar al servicio necesario, grábate hablando durante al menos 20 segundos para que la evaluación sea correcta, profesionales podrán evaluar el grado de tu enfermedad y en que momento deberías de acudir a tu hospital. <br><b>Evitemos el colapso de los hospitales con personas con síndomas menores.</b>"
+        
     }
 
   }

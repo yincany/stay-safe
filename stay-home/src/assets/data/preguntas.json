@@ -1,0 +1,11 @@
+[  
+    {"id":0,"valor":60, "pregunta":"PREGUNTAS.primera", "icon":"train-sharp"},  
+    {"id":1,"valor":15, "pregunta":"PREGUNTAS.segunda", "icon":"thermometer-sharp"}, 
+    {"id":2,"valor":15, "pregunta":"PREGUNTAS.tercera", "icon":"cafe-sharp"},  
+    {"id":3,"valor":29, "pregunta":"PREGUNTAS.cuarta", "icon":"person-add-sharp"},
+    {"id":4,"valor":0, "pregunta":"PREGUNTAS.quinta", "icon":"egg-sharp"},  
+    {"id":5,"valor":0, "pregunta":"PREGUNTAS.sexta", "icon":"walk-sharp"},
+    {"id":5,"valor":0, "pregunta":"PREGUNTAS.septima", "icon":"fast-food-sharp"},
+    {"id":5,"valor":-15, "pregunta":"PREGUNTAS.octava", "icon":"calendar-sharp"}
+]
+

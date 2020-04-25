@@ -18,7 +18,7 @@ export class SeleccionarPaisPage implements OnInit {
   constructor(private translate: TranslateService, private alertCtrl:AlertController, private router: Router, private popoverCtrl : PopoverController) { }
  
   ngOnInit() {
-  }
+  } 
   go(id: string | number){
     console.log("PASO : go "  + id);
     if (id == 1){
