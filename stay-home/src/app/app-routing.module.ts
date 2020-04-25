@@ -3,8 +3,45 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'seleccionar-mp',
+    loadChildren: () => import('./seleccionar-mp/seleccionar-mp.module').then( m => m.SeleccionarMPPageModule)
+  },
+
+  {
+    path: 'seleccionar-pais',
+    loadChildren: () => import('./seleccionar-pais/seleccionar-pais.module').then( m => m.SeleccionarPaisPageModule)
+  },
+  {
+    path: 'paciente-ultimos',
+    loadChildren: () => import('./paciente-ultimos/paciente-ultimos.module').then( m => m.PacienteUltimosPageModule)
+  },
+  {
+    path: 'paciente-actual',
+    loadChildren: () => import('./paciente-actual/paciente-actual.module').then( m => m.PacienteActualPageModule)
+  },
+  {
+    path: 'configuracion-container',
+    loadChildren: () => import('./configuracion-container/configuracion-container.module').then( m => m.ConfiguracionContainerPageModule)
+  },
+  {
+    path: 'medico-listado',
+    loadChildren: () => import('./medico-listado/medico-listado.module').then( m => m.MedicoListadoPageModule)
+  },
+  {
+    path: 'medico-actual',
+    loadChildren: () => import('./medico-actual/medico-actual.module').then( m => m.MedicoActualPageModule)
+  },
+  {
+    path: 'language-popover',
+    loadChildren: () => import('./language-popover/language-popover.module').then( m => m.LanguagePopoverPageModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./seleccionar-pais/seleccionar-pais.module').then( m => m.SeleccionarPaisPageModule)
   }
 ];
 @NgModule({

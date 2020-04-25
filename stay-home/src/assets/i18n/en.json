@@ -1,0 +1,13 @@
+{
+    "HOME":{
+        "title": "Home",
+        "greeting": "Hey {{id}} Welcome To ionic",
+        "withcode": "<br><br>You are <b>epic</b>",
+        "btn": "show alert"
+    
+    }, 
+    "ALERT":{
+        "header": "error",
+        "msg": "problem"
+    }  
+  }

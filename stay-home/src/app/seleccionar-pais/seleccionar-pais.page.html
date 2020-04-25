@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ 'HOME.title' | translate}}</ion-title>
+
+   
+
+
+      <ion-buttons slot="primary">
+        <ion-button color="primary" (click)="openLanguagePopover($event)">
+          <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical" ></ion-icon>
+        </ion-button>
+
+
+
+      </ion-buttons>
+
+ 
+
+
+  </ion-toolbar>
+
+  
+  
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block"  fill="outline" href="/seleccionar-mp">Español</ion-button>
+  <ion-button expand="block" fill="outline" (click)="go()">English</ion-button>
+
+
+  <ion-text color="secondary" [translate]="'HOME.greeting'" [translateParams]="params"></ion-text>
+
+  <ion-text color="secondary" [innerHTML]="'HOME.withcode' | translate"></ion-text>
+<ion-button expand="block" (click) = "showAlert()">
+
+  {{'HOME.btn' | translate}}
+</ion-button>
+  
+
+</ion-content>

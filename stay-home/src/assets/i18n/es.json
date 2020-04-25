@@ -1,0 +1,13 @@
+{
+    "HOME":{
+        "title": "Inicio",
+        "greeting": "hola {{id}} bienvenido",
+        "withcode": "<br><br>Eres <b>épico</b>",
+        "btn": "show alert"
+    
+    }, 
+    "ALERT":{
+        "header": "error en el sistema",
+        "msg": "problema"
+    }  
+  }
