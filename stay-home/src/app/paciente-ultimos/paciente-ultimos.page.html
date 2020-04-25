@@ -1,9 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Paciente_Ultimos</ion-title>
+<ion-header color="light">
+  <ion-toolbar color="light">
+    <ion-title color="secondary"> {{"PACIENTEHISTORICO.title" | translate}} </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="light">
+
+
+
+  <ion-list>
+    <ion-list-header color="secondary">
+      {{'PACIENTEHISTORICO.title' | translate }}
+    </ion-list-header>
+
+
+    <ion-item *ngFor="let item of data; index as i" >
+    
+  
+      <ion-badge item-end color="secondary"> {{ item.date }}</ion-badge>
+        <ion-icon [color]="item.primero" name="train-sharp"></ion-icon>
+        <ion-icon [color]="item.segundo" name="thermometer-sharp"></ion-icon>
+        <ion-icon [color]="item.tercero" name="cafe-sharp"></ion-icon>
+        <ion-icon [color]="item.cuarto" name="person-add-sharp"></ion-icon>
+        <ion-icon [color]="item.quinto" name="egg-sharp"></ion-icon>
+        <ion-icon [color]="item.sexto" name="walk-sharp"></ion-icon>
+        <ion-icon [color]="item.septimo" name="fast-food-sharp"></ion-icon>
+        <ion-icon [color]="item.octavo" name="calendar-sharp"></ion-icon>
+        <ion-icon [color]="item.voice" name="recording-outline"></ion-icon>
+        
+       
+     
+    </ion-item>
+
+    
+  </ion-list>
+
 
 </ion-content>

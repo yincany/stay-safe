@@ -43,6 +43,9 @@
         "title": "Grabación diaria",
         "recording": "Grabando...",
         "text": "<h6><b>Tienes posibles síntomas de coronavirus</b>.<br> Uno de los síntomas más importantes es medir la capacidad pulmonar de cada enfermo. Para no saturar al servicio necesario, grábate hablando durante al menos 20 segundos para que la evaluación sea correcta, profesionales podrán evaluar el grado de tu enfermedad y en que momento deberías de acudir a tu hospital. <br><b>Evitemos el colapso de los hospitales con personas con síndomas menores.</b></h6>"
+    },
+    "PACIENTEHISTORICO":{
+        "title": "Histórico"
     }
 
 

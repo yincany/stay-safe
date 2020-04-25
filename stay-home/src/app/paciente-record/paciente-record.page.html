@@ -8,19 +8,27 @@
 
 
   
- 
+ <div [style.display]="isVisibleRecording ? 'block' : 'none'">
+   
   <ion-text color="secondary" style="padding-left: 16px;">
-    <h1  class="ion-padding-start, ion-padding-horizontal"  [innerHTML]="'PACIENTERECORD.text' | translate"> </h1>
+    <h6  class="ion-padding-start, ion-padding-horizontal"  [innerHTML]="'PACIENTERECORD.text' | translate"> </h6>
   </ion-text>
   <br><br>
 
   <ion-button  expand="block" color="secondary" size="large" (click)="recordVoice()">  <ion-icon name="recording-outline" size="large"></ion-icon> </ion-button>
  
 
-  <ion-list color="light" [style.display]="isVisibleRecording ? 'block' : 'none'">
-    <ion-list-header>
-      <ion-label color="secondary"> {{"PACIENTERECORD.recording" | translate }} </ion-label>
-    </ion-list-header>
-    <ion-progress-bar color="secondary" value={{progress}}  buffer={{buffer}}></ion-progress-bar>
-  </ion-list>
+
+ </div>
+
+
+ <ion-list color="light" [style.display]="isVisibleRecording ? 'none' : 'block'">
+  <ion-list-header>
+    <ion-label color="secondary"> {{"PACIENTERECORD.recording" | translate }} </ion-label>
+  </ion-list-header>
+  <ion-progress-bar color="secondary" value={{progress}}  buffer={{buffer}}></ion-progress-bar>
+</ion-list>
+
+
+
 </ion-content>
