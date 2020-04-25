@@ -42,6 +42,18 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./seleccionar-pais/seleccionar-pais.module').then( m => m.SeleccionarPaisPageModule)
+  },
+  {
+    path: 'paciente-tabs',
+    loadChildren: () => import('./paciente-tabs/paciente-tabs.module').then( m => m.PacienteTabsPageModule)
+  },
+  {
+    path: 'medico-tabs',
+    loadChildren: () => import('./medico-tabs/medico-tabs.module').then( m => m.MedicoTabsPageModule)
+  },
+  {
+    path: 'configuracion',
+    loadChildren: () => import('./configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
   }
 ];
 @NgModule({

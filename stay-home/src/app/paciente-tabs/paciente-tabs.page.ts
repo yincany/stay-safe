@@ -5,20 +5,17 @@ import { Route, Router } from '@angular/router';
 import { PopoverController, AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-seleccionar-pais',
-  templateUrl: './seleccionar-pais.page.html',
-  styleUrls: ['./seleccionar-pais.page.scss'],
+  selector: 'app-paciente-tabs',
+  templateUrl: './paciente-tabs.page.html',
+  styleUrls: ['./paciente-tabs.page.scss'],
 })
-export class SeleccionarPaisPage implements OnInit {
+export class PacienteTabsPage implements OnInit {
 
-
-  params = {
-    id: 'identificador'
-  };
   constructor(private translate: TranslateService, private alertCtrl:AlertController, private router: Router, private popoverCtrl : PopoverController) { }
- 
+
   ngOnInit() {
   }
+
   go(id: string | number){
     console.log("PASO : go "  + id);
     if (id == 1){
@@ -30,6 +27,7 @@ export class SeleccionarPaisPage implements OnInit {
 
   }
 
+  
   async showAlert(){
 
     const alert = await this.alertCtrl.create({
@@ -39,7 +37,6 @@ export class SeleccionarPaisPage implements OnInit {
     });
     alert.present();
   }
-
 
   async openLanguagePopover(ev: any){
     console.log("paso por aqui");

@@ -1,5 +1,5 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header >
+  <ion-toolbar  color="light">
     <ion-title>{{ 'HOME.title' | translate}}</ion-title>
 
    
@@ -23,18 +23,31 @@
   
 </ion-header>
 
-<ion-content>
-  <ion-button expand="block"  fill="outline" href="/seleccionar-mp">Español</ion-button>
-  <ion-button expand="block" fill="outline" (click)="go()">English</ion-button>
+<ion-content color="light">
+ 
 
-
-  <ion-text color="secondary" [translate]="'HOME.greeting'" [translateParams]="params"></ion-text>
-
-  <ion-text color="secondary" [innerHTML]="'HOME.withcode' | translate"></ion-text>
-<ion-button expand="block" (click) = "showAlert()">
-
-  {{'HOME.btn' | translate}}
-</ion-button>
+  <ion-card color="secondary">
+    
+    <ion-card-header  (click)="go(0)">
+      <img src="../assets/imgs/patient.png"  width="100" style="align-items: center;"   />
+      <ion-card-subtitle> {{'CHOOSE.patient_text' | translate}}</ion-card-subtitle>
+      <ion-card-title> {{'CHOOSE.patient' | translate}}</ion-card-title>
+    </ion-card-header>
   
+  
+  </ion-card>
+
+  <ion-card color="tertiary"  (click)="go(1)">
+    <img src="../assets/imgs/doctor.png" width="100" />
+    <ion-card-header>
+      <ion-card-subtitle> {{'CHOOSE.doctor_text' | translate}}</ion-card-subtitle>
+      <ion-card-title> {{'CHOOSE.doctor' | translate}}</ion-card-title>
+    </ion-card-header>
+  
+  
+  </ion-card>
+
+ 
+
 
 </ion-content>

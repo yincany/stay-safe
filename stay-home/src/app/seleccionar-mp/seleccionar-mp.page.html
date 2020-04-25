@@ -6,6 +6,17 @@
 
 <ion-content padding>
  
+  <ion-button expand="block"  fill="outline" href="/seleccionar-mp">Español</ion-button>
+  <ion-button expand="block" fill="outline" (click)="go()">English</ion-button>
 
+
+  <ion-text color="secondary" [translate]="'HOME.greeting'" [translateParams]="params"></ion-text>
+
+  <ion-text color="secondary" [innerHTML]="'HOME.withcode' | translate"></ion-text>
+<ion-button expand="block" (click) = "showAlert()">
+
+  {{'HOME.btn' | translate}}
+</ion-button>
+  
 
 </ion-content>

@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {IonicStorageModule } from '@ionic/storage';
-
+import {UniqueDeviceID} from '@ionic-native/unique-device-id';
 
 export function createTranslateLoader(http: HttpClient){
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');

@@ -1,6 +1,6 @@
 {
     "HOME":{
-        "title": "Home",
+        "title": "Stay-Safe-Home",
         "greeting": "Hey {{id}} Welcome To ionic",
         "withcode": "<br><br>You are <b>epic</b>",
         "btn": "show alert"
@@ -9,5 +9,17 @@
     "ALERT":{
         "header": "error",
         "msg": "problem"
-    }  
+    },
+    "CHOOSE":{
+        "doctor_text": "Select as physician",
+        "doctor": "Physician",
+        "patient": "Patient",
+        "patient_text": "Select as patient"
+    },
+    "MEDICOTABS":{
+        "primera": "LOGs",
+        "segunda": "Now",
+        "tercera": "Config"
+    }
+
   }

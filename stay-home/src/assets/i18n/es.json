@@ -1,6 +1,6 @@
 {
     "HOME":{
-        "title": "Inicio",
+        "title": "Stay-Safe-Home",
         "greeting": "hola {{id}} bienvenido",
         "withcode": "<br><br>Eres <b>épico</b>",
         "btn": "show alert"
@@ -9,5 +9,19 @@
     "ALERT":{
         "header": "error en el sistema",
         "msg": "problema"
-    }  
+    },
+    "CHOOSE":{
+        "doctor_text": "Entra como profesional",
+        "doctor": "Médico",
+        "patient": "Paciente",
+        "patient_text": "Entra como paciente"
+    },
+    "MEDICOTABS":{
+        "primera": "Histórico",
+        "segunda": "Actual",
+        "tercera": "Configuración"
+    }
+
+
+    
   }
