@@ -15,7 +15,7 @@ export class PacienteTabsPage implements OnInit {
 
   ngOnInit() {
   }
-
+ 
   go(id: string | number){
     console.log("PASO : go "  + id);
     if (id == 1){
