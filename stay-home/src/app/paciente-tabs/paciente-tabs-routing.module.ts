@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     component: PacienteTabsPage,
-    children: [
+    children: [ 
       {
         path: 'tab1',
         loadChildren: () => import('../paciente-ultimos/paciente-ultimos.module').then(m => m.PacienteUltimosPageModule)

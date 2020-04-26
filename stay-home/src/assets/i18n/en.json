@@ -7,8 +7,8 @@
     
     }, 
     "ALERT":{
-        "header": "error",
-        "msg": "problem"
+        "headerOK": "Atención",
+        "msgOK": "Está todo bien. No necesitas ir a un centro de salud."
     },
     "CHOOSE":{
         "doctor_text": "Enter as physician",
@@ -42,10 +42,18 @@
     "PACIENTERECORD":{
         "title": "Dairy recording",
         "recording": "Recording...",
-        "text": "<b>Tienes posibles síntomas de coronavirus</b>. Uno de los síntomas más importantes es medir la capacidad pulmonar de cada enfermo. Para no saturar al servicio necesario, grábate hablando durante al menos 20 segundos para que la evaluación sea correcta, profesionales podrán evaluar el grado de tu enfermedad y en que momento deberías de acudir a tu hospital. <br><b>Evitemos el colapso de los hospitales con personas con síndomas menores.</b>"
+        "text": "<b>Tienes posibles síntomas de coronavirus</>. Uno de los síntomas más importantes es medir la capacidad pulmonar de cada enfermo. Para no saturar al servicio necesario, grábate hablando durante al menos 20 segundos para que la evaluación sea correcta, profesionales podrán evaluar el grado de tu enfermedad y en que momento deberías de acudir a tu hospital. <br><b>Evitemos el colapso de los hospitales con personas con síndomas menores.</b>"
         
     },
     "PACIENTEHISTORICO":{
         "title": "Histórico"
+    },
+    "MEDICOACTUAL":{
+        "title": "Analizar",
+        "sintomas":"Síntomas",
+        "voz":"Escuchar grabación de voz",
+        "ok":"Seguir en casa",
+        "notok":"Ir al hospital",
+        "diagnostico":"Diagnostico"
     }
   }

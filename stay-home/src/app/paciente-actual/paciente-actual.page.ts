@@ -52,8 +52,8 @@ export class PacienteActualPage implements OnInit {
   async showAlert(){
 
     const alert = await this.alertCtrl.create({
-      header: this.translate.instant('ALERT.header'),
-      message: this.translate.instant('ALERT.msg'),
+      header: this.translate.instant('ALERT.headerOK'),
+      message: this.translate.instant('ALERT.msgOK'),
       buttons: ['OK']
     });
     alert.present();
@@ -61,8 +61,8 @@ export class PacienteActualPage implements OnInit {
 
   async showMessageOK(){
     const alert = await this.alertCtrl.create({
-      header: this.translate.instant('ALERT.header'),
-      message: this.translate.instant('ALERT.msg'),
+      header: this.translate.instant('ALERT.headerOK'),
+      message: this.translate.instant('ALERT.msgOK'),
       buttons: ['OK']
     });
     alert.present();

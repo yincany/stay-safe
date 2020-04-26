@@ -1,3 +1,5 @@
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +15,8 @@ import { MedicoTabsPage } from './medico-tabs.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    MedicoTabsPageRoutingModule
+    MedicoTabsPageRoutingModule,
+    TranslateModule
   ],
   declarations: [MedicoTabsPage]
 })

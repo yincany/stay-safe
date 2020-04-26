@@ -1,9 +1,67 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Medico-Actual</ion-title>
+<ion-header color="light">
+  <ion-toolbar color="light">
+    <ion-title color="primary"> {{ "MEDICOACTUAL.title" | translate  }} </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="light">
+
+  <ion-text color="primary" style="padding-left: 16px;">
+    <h6  class="ion-padding-start, ion-padding-horizontal"  [innerHTML]="'MEDICOACTUAL.sintomas' | translate"> </h6>
+  </ion-text>
+  <br>
+  
+ 
+  
+  <ion-item *ngFor="let item of data; index as i" >
+    
+  
+
+
+    <ion-badge item-end color="primary"> {{ item.date }}</ion-badge>
+      <ion-icon [color]="item.primero" name="train-sharp"></ion-icon>
+      <ion-icon [color]="item.segundo" name="thermometer-sharp"></ion-icon>
+      <ion-icon [color]="item.tercero" name="cafe-sharp"></ion-icon>
+      <ion-icon [color]="item.cuarto" name="person-add-sharp"></ion-icon>
+      <ion-icon [color]="item.quinto" name="egg-sharp"></ion-icon>
+      <ion-icon [color]="item.sexto" name="walk-sharp"></ion-icon>
+      <ion-icon [color]="item.septimo" name="fast-food-sharp"></ion-icon>
+      <ion-icon [color]="item.octavo" name="calendar-sharp"></ion-icon>
+      <ion-icon [color]="item.voice" name="recording-outline"></ion-icon>
+      
+     
+   
+  </ion-item>
+
+
+  <br>
+  <b>
+  <ion-text color="primary" style="padding-left: 16px;">
+    <h6  class="ion-padding-start, ion-padding-horizontal"  [innerHTML]="'MEDICOACTUAL.voz' | translate"> </h6>
+  </ion-text>
+</b>
+  
+  <br>
+
+  <ion-button   expand="block" color="primary" size="large" (click)="playVoice()">  <ion-icon name="recording-outline" size="large"></ion-icon> </ion-button>
+ 
+  <br>
+ 
+
+  <b>
+  <ion-text color="primary" style="padding-left: 16px;">
+    <h6  class="ion-padding-start, ion-padding-horizontal"  [innerHTML]="'MEDICOACTUAL.diagnostico' | translate"> </h6>
+  </ion-text>
+</b>
+  
+  <br>
+
+  <ion-item color="light">
+      
+        <ion-button   expand="block" class="round" expand="full"  color="primary" size="large"> {{ "MEDICOACTUAL.ok" | translate  }}</ion-button>
+        <ion-button  expand="block" class="round"  expand="full" color="danger" size="large" > {{ "MEDICOACTUAL.notok" | translate  }}</ion-button>
+      
+</ion-item>
+
 
 </ion-content>
